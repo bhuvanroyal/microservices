@@ -1,0 +1,10 @@
+
+r
+java:S1854";Remove this useless assignment to local variable "product".(Àü¥—ÿÿÿÿÿ8ò—µÒ«2H<RMAJORZ
+CODE_SMELL
+l
+java:S1172"5Remove this unused method parameter "productRequest".(’¬Ýýÿÿÿÿ8ó—µÒ«2H=RMAJORZ
+CODE_SMELL
+c
+java:S1481",Remove this unused "product" local variable.(Àü¥—ÿÿÿÿÿ8ó—µÒ«2H?RMINORZ
+CODE_SMELL
