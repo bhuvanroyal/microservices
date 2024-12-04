@@ -7187,3 +7187,5 @@ java.net.URISyntaxException: Illegal character in path at index 16: file:/C:/Pro
 2024-12-04 16:26:52,252 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-12-04 16:26:52,253 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\damab\LearningMicroservices\product-service\src\test\resources
 2024-12-04 16:26:56,359 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-04 16:26:56,367 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-04 16:26:56,370 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\damab\LearningMicroservices\product-service\src\test\resources
