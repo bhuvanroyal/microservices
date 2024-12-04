@@ -1,0 +1,5 @@
+package com.bhuvan.exception;
+
+public class GlobalExceptionHandler {
+
+}

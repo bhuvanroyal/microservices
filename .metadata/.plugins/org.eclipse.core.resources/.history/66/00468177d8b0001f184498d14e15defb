@@ -1,0 +1,47 @@
+package com.bhuvan.service;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.bhuvan.dto.ProductRequest;
+import com.bhuvan.dto.ProductResponse;
+import com.bhuvan.entity.Product;
+import com.bhuvan.repository.ProductRepository;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+
+
+@Service
+public class ProductService {
+
+	private ModelMapper mapper;
+	
+	private ProductRepository productRepository;
+	
+	
+	
+	public void createProduct(ProductRequest productRequest) {
+//		Product product=Product.builder().productDescription(productRequest.getProductDescription())
+//				.productName(productRequest.getProductName())
+//				.productPrice(productRequest.getProductPrice())
+//				.build();
+		Product product=mapper.map(productRequest,Product.class);
+		productRepository.save(product);
+		
+	}
+	
+	public List<ProductResponse> getAllProducts() {
+		List<Product> products=productRepository.findAll();
+		
+		return	products.stream().map(p->ProductResponse.builder().productId(p.getProductId())
+				.productName(p.getProductName())
+				.productDescription(p.getProductDescription())
+				.productPrice(p.getProductPrice()).build()).toList();
+				
+	}
+	
+}

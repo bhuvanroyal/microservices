@@ -1,0 +1,11 @@
+package com.bhuvan.exception;
+
+public class ProductNotFoundException extends Exception{
+
+	String msg;
+
+	public ProductNotFoundException(String msg) {
+		super(msg);
+	}
+	
+}
