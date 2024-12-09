@@ -14,6 +14,7 @@ import com.bhuvan.dto.ProductResponse;
 import com.bhuvan.exception.ProductNotFoundException;
 import com.bhuvan.service.ProductService;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -24,7 +25,7 @@ public class ProductController {
 	private final ProductService productService;
 	
 	@PostMapping
-	public void createProduct(@RequestBody ProductRequest productRequest) {
+	public void createProduct(@Valid @RequestBody ProductRequest productRequest) {
 		productService.createProduct(productRequest);
 	}
 	
